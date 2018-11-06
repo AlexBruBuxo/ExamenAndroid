@@ -1,7 +1,9 @@
 package alex.bru.alexbru;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -15,6 +17,7 @@ public class RecipeActivity extends AppCompatActivity {
     private String description = "Cortar papatas, freírlas suevamente...";
 
     private TextView name_view, minutes_view, ingredients_view, description_view;
+    private static final int EDIT_INGRED = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,4 +57,12 @@ public class RecipeActivity extends AppCompatActivity {
         ingredients_view.setText(lineas);
 
     }
+
+
+    public void onClickAdd(View view) {
+        Intent intent = new Intent(this, NewIngredientActivity.class);
+        startActivityForResult(intent, EDIT_INGRED);
+    }
+
+
 }
