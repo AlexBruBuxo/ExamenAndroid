@@ -36,5 +36,22 @@ public class RecipeActivity extends AppCompatActivity {
         description_view = findViewById(R.id.description_view);
         ingredients_view = findViewById(R.id.ingredients_view);
 
+        printRecipe(recipe);
+
+    }
+
+    public void printRecipe(Recipe recipe) {
+        name_view.setText(recipe.getName());
+        String minutos = Integer.toString(recipe.getMinutes()) + "minutos";
+        minutes_view.setText(minutos);
+        description_view.setText(recipe.getDescription());
+
+        List<String> ingredientes = recipe.getIngredients();
+        String lineas = "";
+        for (int i = 0; i  < ingredientes.size(); i++) {
+            lineas += ingredientes.get(i) + "\n" + "\n";
+        }
+        ingredients_view.setText(lineas);
+
     }
 }
