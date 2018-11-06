@@ -5,4 +5,5 @@
     <string name="Ingredients">Ingredientes</string>
     <string name="NewIngredient">Nuevo Ingrediente</string>
     <string name="Add">Añadir</string>
+    <string name="minutes">minutos</string>
 </resources>
