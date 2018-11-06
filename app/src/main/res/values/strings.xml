@@ -3,4 +3,6 @@
     <string name="Preparation">Preparación</string>
     <string name="AddIngredient">Añadir Ingrediente</string>
     <string name="Ingredients">Ingredientes</string>
+    <string name="NewIngredient">Nuevo Ingrediente</string>
+    <string name="Add">Añadir</string>
 </resources>
