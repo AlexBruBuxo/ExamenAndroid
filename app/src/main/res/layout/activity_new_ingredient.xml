@@ -44,6 +44,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="13dp"
+        android:background="@color/colorPrimary"
         android:onClick="onClickAdd"
         android:text="@string/Add"
         app:layout_constraintBottom_toBottomOf="parent"
